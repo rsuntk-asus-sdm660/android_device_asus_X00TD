@@ -9,3 +9,4 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     lineage_X00TD-userdebug
+
