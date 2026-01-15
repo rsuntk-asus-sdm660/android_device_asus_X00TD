@@ -18,7 +18,8 @@ DEVICE_PACKAGE_OVERLAYS += device/asus/X00TD/overlay
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.device.rc
+    init.device.rc \
+    init.goodix.sh
 
 # Wifi
 PRODUCT_PACKAGES += \
