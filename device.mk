@@ -4,8 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/asus/X00TD
-
 # Inherit from sdm660-common
 $(call inherit-product, device/asus/sdm660-common/sdm660.mk)
 
@@ -14,7 +12,8 @@ TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/asus/X00TD/overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
 
 # Ramdisk
 PRODUCT_PACKAGES += \
