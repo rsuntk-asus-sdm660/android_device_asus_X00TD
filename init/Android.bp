@@ -5,13 +5,13 @@
 
 prebuilt_etc {
     name: "init.device.rc",
-    src: "etc/init.device.rc",
+    src: "init.device.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
 
 sh_binary {
     name: "init.goodix.sh",
-    src: "bin/init.goodix.sh",
+    src: "init.goodix.sh",
     vendor: true,
 }

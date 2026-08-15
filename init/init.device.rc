@@ -26,7 +26,6 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 #
-
 on early-boot
      chown system system /dev/input/event4  # stk3xXx-light
      chown system system /dev/input/event5  # stk3xXx-proximity
