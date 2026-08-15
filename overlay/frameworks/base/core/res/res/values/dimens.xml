@@ -1,29 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-/* Optimized for ASUS Zenfone Max Pro M1 (X00TD)
-** Resolution: 2160x1080 (18:9)
-** Android 13 (crDroid)
-** Fix: Removed excess status bar padding
+/*
+** Copyright 2009, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
 */
 -->
 <resources>
-    <!-- ========================================== -->
-    <!--          STATUS BAR & PADDING              -->
-    <!-- ========================================== -->
 
-    <!-- Status bar height -->
+    <!-- Exact physical height of the Notch (From Device Tree) -->
     <dimen name="status_bar_height_portrait">24dp</dimen>
+
+    <!-- Landscape usually sits beside notch, standard height is fine -->
     <dimen name="status_bar_height_landscape">24dp</dimen>
-    <dimen name="status_bar_height">24dp</dimen>
-    <dimen name="status_bar_height_default">24dp</dimen>
 
-    <!-- CRITICAL FIX: Reduce padding for X00TD screen -->
-    <!-- Force icons closer to the edge -->
-    <dimen name="status_bar_padding_start">4dp</dimen>
-    <dimen name="status_bar_padding_end">4dp</dimen>
-    <dimen name="status_bar_padding_top">0dp</dimen>
+    <dimen name="status_bar_height">@dimen/status_bar_height_portrait</dimen>
+    <dimen name="status_bar_height_default">@dimen/status_bar_height_portrait</dimen>
 
-    <!-- Rounded Corners: DISABLED (Square Screen 18:9) -->
+    <!-- QS Offset (Status Bar + Header Padding) -->
+    <dimen name="quick_qs_offset_height">48dp</dimen>
+
+    <!-- Touch area around the notch -->
+    <dimen name="display_cutout_touchable_region_size">0dp</dimen>
+
+    <!-- Physical corner radius (From Device Tree) -->
     <dimen name="rounded_corner_radius">0dp</dimen>
     <dimen name="rounded_corner_radius_top">0dp</dimen>
     <dimen name="rounded_corner_radius_bottom">0dp</dimen>
@@ -31,16 +41,6 @@
     
     <!-- Ensure content hugs the corners -->
     <dimen name="rounded_corner_content_padding">0dp</dimen>
-
-    <!-- Notch (None) -->
-    <dimen name="display_cutout_touchable_region_size">0dp</dimen>
-
-    <!-- Quick Settings Offset -->
-    <dimen name="quick_qs_offset_height">48dp</dimen>
-
-    <!-- ========================================== -->
-    <!--          UI ELEMENTS                       -->
-    <!-- ========================================== -->
 
     <!-- Status Bar Icons -->
     <dimen name="status_bar_icon_size">20dip</dimen>
