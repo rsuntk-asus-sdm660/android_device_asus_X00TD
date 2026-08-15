@@ -5,7 +5,7 @@
 #
 
 # Inherit from sdm660-common
-$(call inherit-product, device/asus/sdm660-common/sdm660.mk)
+$(call inherit-product, device/asus/sdm660-common/common.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
