@@ -15,6 +15,10 @@ TARGET_SCREEN_WIDTH := 1080
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Powerhint
+PRODUCT_COPY_FILES += \
+    device/asus/sdm660-common/power/configs/powerhint_X00TD.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.X00TD.rc \
