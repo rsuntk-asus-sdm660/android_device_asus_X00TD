@@ -3,13 +3,6 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
-prebuilt_etc {
-    name: "init.X00TD.rc",
-    src: "init.X00TD.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
 sh_binary {
     name: "init.goodix.sh",
     src: "init.goodix.sh",

@@ -11,6 +11,13 @@ $(call inherit-product, device/asus/sdm660-common/common.mk)
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
+# Init script
+PRODUCT_PACKAGES += \
+    init.goodix.sh
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/init.X00TD.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.device.rc \
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
@@ -18,11 +25,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Powerhint
 PRODUCT_COPY_FILES += \
     device/asus/sdm660-common/power/configs/powerhint_X00TD.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-
-# Ramdisk
-PRODUCT_PACKAGES += \
-    init.X00TD.rc \
-    init.goodix.sh
 
 # Wifi
 PRODUCT_PACKAGES += \
